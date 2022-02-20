@@ -5,7 +5,7 @@
  * Date: 2015/07
  */
 
-enum {
+typedef enum {
 	EAP_REQUEST = 1,
 	EAP_RESPONSE,
 	EAP_SUCCESS,
@@ -15,7 +15,7 @@ enum {
 #define EAP_CODE_MIN EAP_REQUEST
 #define EAP_CODE_MAX EAP_FAILURE
 
-enum {
+typedef enum {
 	EAP_PACKET = 0,
 	EAPOL_START,
 	EAPOL_LOGOFF,
@@ -25,7 +25,7 @@ enum {
 #define EAPOL_TYPE_MIN EAP_PACKET
 #define EAPOL_TYPE_MAX EAPOL_RJ_PROPRIETARY_KEEPALIVE
 
-enum {
+typedef enum {
 	IDENTITY = 1,
 	MD5_CHALLENGE = 4
 } EAP_TYPE;

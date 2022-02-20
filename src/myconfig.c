@@ -947,7 +947,7 @@ static void applyDaemonMode(int daemonMode) {
 	}
 }
 
-inline int isPidFileEnabled(char* pidFilePath)
+static inline int isPidFileEnabled(char* pidFilePath)
 {
 	return strncmp(pidFilePath, "none", 4);
 }
